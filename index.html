@@ -34,7 +34,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  /* ── NAV ── */
   nav {
     position: fixed;
     top: 0; left: 0; right: 0;
@@ -92,7 +91,6 @@
   }
   .nav-cta:hover { background: var(--ink) !important; }
 
-  /* ── HERO ── */
   #home {
     min-height: 100vh;
     display: flex;
@@ -113,7 +111,6 @@
     pointer-events: none;
   }
 
-  /* Subtle grid lines */
   .hero-bg::after {
     content: '';
     position: absolute;
@@ -148,10 +145,7 @@
     animation: fadeUp 0.9s 0.35s forwards;
   }
 
-  .hero-headline em {
-    font-style: italic;
-    color: var(--moss);
-  }
+  .hero-headline em { font-style: italic; color: var(--moss); }
 
   .hero-sub {
     font-size: 1rem;
@@ -229,7 +223,6 @@
     margin-top: 0.25rem;
   }
 
-  /* ── SECTIONS SHARED ── */
   section { padding: 7rem 3rem; }
   .section-label {
     font-family: var(--mono);
@@ -248,7 +241,6 @@
     margin-bottom: 1.5rem;
   }
 
-  /* ── ABOUT ── */
   #about {
     border-top: 1px solid var(--divider);
     display: grid;
@@ -264,12 +256,7 @@
     margin-bottom: 1.2rem;
   }
 
-  .about-badges {
-    display: flex;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-  }
+  .about-badges { display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 2rem; }
 
   .badge {
     font-family: var(--mono);
@@ -283,15 +270,8 @@
     border-radius: 2px;
   }
 
-  /* ── SCIENCE ── */
-  #science {
-    background: var(--ink);
-    color: var(--cream);
-    border-top: none;
-  }
-
+  #science { background: var(--ink); color: var(--cream); border-top: none; }
   #science .section-label { color: var(--moss-light); }
-
   #science h2 { color: var(--cream); }
 
   .science-grid {
@@ -327,17 +307,9 @@
     line-height: 1.2;
   }
 
-  .science-card p {
-    font-size: 0.88rem;
-    color: rgba(247,244,239,0.55);
-    line-height: 1.75;
-  }
+  .science-card p { font-size: 0.88rem; color: rgba(247,244,239,0.55); line-height: 1.75; }
 
-  .publications {
-    margin-top: 5rem;
-    border-top: 1px solid rgba(247,244,239,0.1);
-    padding-top: 3rem;
-  }
+  .publications { margin-top: 5rem; border-top: 1px solid rgba(247,244,239,0.1); padding-top: 3rem; }
 
   .pub-label {
     font-family: var(--mono);
@@ -356,43 +328,14 @@
     align-items: baseline;
   }
 
-  .pub-year {
-    font-family: var(--mono);
-    font-size: 0.65rem;
-    color: rgba(247,244,239,0.3);
-    min-width: 3rem;
-  }
+  .pub-year { font-family: var(--mono); font-size: 0.65rem; color: rgba(247,244,239,0.3); min-width: 3rem; }
+  .pub-title { font-family: var(--serif); font-size: 1.05rem; font-weight: 300; font-style: italic; color: rgba(247,244,239,0.75); line-height: 1.4; }
+  .pub-journal { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.08em; color: var(--moss-light); margin-top: 0.25rem; }
 
-  .pub-title {
-    font-family: var(--serif);
-    font-size: 1.05rem;
-    font-weight: 300;
-    font-style: italic;
-    color: rgba(247,244,239,0.75);
-    line-height: 1.4;
-  }
-
-  .pub-journal {
-    font-family: var(--mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.08em;
-    color: var(--moss-light);
-    margin-top: 0.25rem;
-  }
-
-  /* ── TEAM ── */
   #team { border-top: 1px solid var(--divider); }
 
-  .team-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 3.5rem;
-  }
-
-  .team-card {
-    position: relative;
-  }
+  .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3.5rem; }
+  .team-card { position: relative; }
 
   .team-photo {
     width: 100%;
@@ -404,22 +347,19 @@
     position: relative;
   }
 
-  /* Placeholder portrait */
   .team-photo::before {
     content: '';
     position: absolute;
     bottom: 0; left: 50%;
     transform: translateX(-50%);
-    width: 60%;
-    height: 75%;
+    width: 60%; height: 75%;
     background: var(--divider);
     border-radius: 50% 50% 0 0;
   }
   .team-photo::after {
     content: '';
     position: absolute;
-    top: 28%;
-    left: 50%;
+    top: 28%; left: 50%;
     transform: translate(-50%, -50%);
     width: 32%;
     aspect-ratio: 1;
@@ -427,41 +367,13 @@
     border-radius: 50%;
   }
 
-  .team-name {
-    font-family: var(--serif);
-    font-size: 1.15rem;
-    font-weight: 400;
-    margin-bottom: 0.2rem;
-  }
+  .team-name { font-family: var(--serif); font-size: 1.15rem; font-weight: 400; margin-bottom: 0.2rem; }
+  .team-title { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--moss-light); margin-bottom: 0.5rem; }
+  .team-bio { font-size: 0.84rem; color: rgba(26,25,21,0.6); line-height: 1.65; }
 
-  .team-title {
-    font-family: var(--mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--moss-light);
-    margin-bottom: 0.5rem;
-  }
+  #partnerships { background: var(--warm-white); border-top: 1px solid var(--divider); }
 
-  .team-bio {
-    font-size: 0.84rem;
-    color: rgba(26,25,21,0.6);
-    line-height: 1.65;
-  }
-
-  /* ── PARTNERSHIPS ── */
-  #partnerships {
-    background: var(--warm-white);
-    border-top: 1px solid var(--divider);
-  }
-
-  .partnerships-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6rem;
-    align-items: start;
-    margin-top: 2rem;
-  }
+  .partnerships-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 6rem; align-items: start; margin-top: 2rem; }
 
   .partner-type {
     padding: 2.5rem;
@@ -470,98 +382,30 @@
     margin-bottom: 1.2rem;
     transition: border-color 0.2s, box-shadow 0.2s;
   }
-  .partner-type:hover {
-    border-color: var(--moss);
-    box-shadow: 0 4px 24px rgba(61,90,62,0.06);
-  }
+  .partner-type:hover { border-color: var(--moss); box-shadow: 0 4px 24px rgba(61,90,62,0.06); }
 
-  .partner-type-label {
-    font-family: var(--mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: var(--moss);
-    margin-bottom: 0.7rem;
-  }
+  .partner-type-label { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--moss); margin-bottom: 0.7rem; }
+  .partner-type h3 { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; margin-bottom: 0.6rem; }
+  .partner-type p { font-size: 0.88rem; color: rgba(26,25,21,0.6); line-height: 1.7; }
 
-  .partner-type h3 {
-    font-family: var(--serif);
-    font-size: 1.3rem;
-    font-weight: 400;
-    margin-bottom: 0.6rem;
-  }
-
-  .partner-type p {
-    font-size: 0.88rem;
-    color: rgba(26,25,21,0.6);
-    line-height: 1.7;
-  }
-
-  /* ── NEWS ── */
   #news { border-top: 1px solid var(--divider); }
 
-  .news-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    margin-top: 3.5rem;
-  }
+  .news-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3.5rem; }
 
-  .news-card {
-    border-top: 2px solid var(--divider);
-    padding-top: 1.5rem;
-    transition: border-color 0.2s;
-  }
+  .news-card { border-top: 2px solid var(--divider); padding-top: 1.5rem; transition: border-color 0.2s; }
   .news-card:hover { border-color: var(--moss); }
 
-  .news-date {
-    font-family: var(--mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.1em;
-    color: var(--moss-light);
-    margin-bottom: 0.8rem;
-  }
+  .news-date { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.1em; color: var(--moss-light); margin-bottom: 0.8rem; }
+  .news-card h3 { font-family: var(--serif); font-size: 1.2rem; font-weight: 400; line-height: 1.3; margin-bottom: 0.7rem; }
+  .news-card p { font-size: 0.84rem; color: rgba(26,25,21,0.6); line-height: 1.7; }
 
-  .news-card h3 {
-    font-family: var(--serif);
-    font-size: 1.2rem;
-    font-weight: 400;
-    line-height: 1.3;
-    margin-bottom: 0.7rem;
-  }
-
-  .news-card p {
-    font-size: 0.84rem;
-    color: rgba(26,25,21,0.6);
-    line-height: 1.7;
-  }
-
-  /* ── CONTACT ── */
-  #contact {
-    background: var(--moss);
-    color: var(--cream);
-    text-align: center;
-    padding: 8rem 3rem;
-  }
-
+  #contact { background: var(--moss); color: var(--cream); text-align: center; padding: 8rem 3rem; }
   #contact .section-label { color: rgba(247,244,239,0.5); }
   #contact h2 { color: var(--cream); font-size: clamp(2.5rem, 5vw, 5rem); }
 
-  .contact-sub {
-    font-size: 1rem;
-    color: rgba(247,244,239,0.65);
-    max-width: 44ch;
-    margin: 1rem auto 3.5rem;
-    line-height: 1.75;
-  }
+  .contact-sub { font-size: 1rem; color: rgba(247,244,239,0.65); max-width: 44ch; margin: 1rem auto 3.5rem; line-height: 1.75; }
 
-  .contact-options {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    flex-wrap: wrap;
-    margin-bottom: 4rem;
-  }
+  .contact-options { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 4rem; }
 
   .contact-btn {
     display: inline-block;
@@ -574,72 +418,24 @@
     border-radius: 2px;
     transition: background 0.2s, color 0.2s;
   }
-  .contact-btn.primary {
-    background: var(--cream);
-    color: var(--moss);
-  }
+  .contact-btn.primary { background: var(--cream); color: var(--moss); }
   .contact-btn.primary:hover { background: var(--warm-white); }
-
-  .contact-btn.secondary {
-    background: transparent;
-    color: var(--cream);
-    border: 1px solid rgba(247,244,239,0.4);
-  }
+  .contact-btn.secondary { background: transparent; color: var(--cream); border: 1px solid rgba(247,244,239,0.4); }
   .contact-btn.secondary:hover { border-color: var(--cream); background: rgba(247,244,239,0.05); }
 
-  .contact-direct {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    border-top: 1px solid rgba(247,244,239,0.15);
-    padding-top: 3rem;
-  }
+  .contact-direct { display: flex; justify-content: center; gap: 4rem; border-top: 1px solid rgba(247,244,239,0.15); padding-top: 3rem; }
 
-  .contact-item-label {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    color: rgba(247,244,239,0.45);
-    margin-bottom: 0.35rem;
-  }
-
-  .contact-item-value {
-    font-family: var(--serif);
-    font-size: 1.15rem;
-    font-weight: 300;
-    color: var(--cream);
-    text-decoration: none;
-  }
+  .contact-item-label { font-family: var(--mono); font-size: 0.6rem; letter-spacing: 0.14em; text-transform: uppercase; color: rgba(247,244,239,0.45); margin-bottom: 0.35rem; }
+  .contact-item-value { font-family: var(--serif); font-size: 1.15rem; font-weight: 300; color: var(--cream); text-decoration: none; }
   a.contact-item-value:hover { text-decoration: underline; }
 
-  /* ── FOOTER ── */
-  footer {
-    background: var(--ink);
-    color: rgba(247,244,239,0.35);
-    padding: 2rem 3rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: var(--mono);
-    font-size: 0.62rem;
-    letter-spacing: 0.08em;
-  }
-
+  footer { background: var(--ink); color: rgba(247,244,239,0.35); padding: 2rem 3rem; display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.08em; }
   footer a { color: inherit; text-decoration: none; }
   footer a:hover { color: var(--cream); }
 
-  /* ── ANIMATIONS ── */
-  @keyframes fadeUp {
-    from { opacity: 0; transform: translateY(22px); }
-    to   { opacity: 1; transform: translateY(0); }
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
 
-  /* ── MOBILE ── */
   @media (max-width: 900px) {
     nav { padding: 1.2rem 1.5rem; }
     .nav-links { display: none; }
@@ -659,7 +455,6 @@
 </head>
 <body>
 
-<!-- ── NAV ── -->
 <nav>
   <a href="#home" class="nav-logo">Bio<span>Pharma</span></a>
   <ul class="nav-links">
@@ -672,100 +467,95 @@
   </ul>
 </nav>
 
-<!-- ── HERO ── -->
 <section id="home">
   <div class="hero-bg"></div>
   <p class="hero-label">Non-viral delivery — cell &amp; gene therapy</p>
-  <h1 class="hero-headline">Delivery tools built for <em>the next</em> generation</h1>
-  <p class="hero-sub">BioPharma builds modular, easy-to-use non-viral delivery tools designed for drug developers, scientists, and engineers working on the next generation of cell and gene therapies.</p>
+  <h1 class="hero-headline">Simplifying non-viral delivery for <em>cell and gene</em> therapy</h1>
+  <p class="hero-sub">BioPharma builds easy-to-use, modular delivery tools — designed for drug developers, scientists, and engineers working on the next generation of therapies.</p>
   <div class="hero-actions">
     <a href="#contact" class="btn-primary">Get in Touch</a>
-    <a href="#science" class="btn-ghost">Our Science →</a>
+    <a href="#science" class="btn-ghost">Our Science &rarr;</a>
   </div>
   <div class="hero-stats">
     <div>
       <div class="stat-num">3+</div>
-      <div class="stat-label">Published Studies</div>
+      <div class="stat-label">Research Partners</div>
     </div>
     <div>
       <div class="stat-num">12</div>
-      <div class="stat-label">Team Members</div>
+      <div class="stat-label">Delivery Modules</div>
     </div>
     <div>
-      <div class="stat-num">IND</div>
-      <div class="stat-label">Filing 2026</div>
+      <div class="stat-num">48hr</div>
+      <div class="stat-label">Avg. Lead Time</div>
     </div>
   </div>
 </section>
 
-<!-- ── ABOUT ── -->
 <section id="about">
   <div class="about-left">
     <p class="section-label">Who We Are</p>
-    <h2>Simplifying delivery so scientists can focus on the science.</h2>
+    <h2>Simplifying delivery so developers can focus on the therapy.</h2>
   </div>
   <div class="about-right">
-    <p>Non-viral delivery is one of the most persistent bottlenecks in cell and gene therapy development. Existing tools are complex, poorly documented, and built for specialists — not the broad community of researchers and developers driving the field forward.</p>
-    <p>BioPharma was founded to change that. We build modular delivery systems that are easy to integrate, reproducible across labs, and designed to work with real-world workflows — whether you're at a university bench or inside a CDMO's GMP facility.</p>
-    <p>We work closely with the people using our tools. The site is a starting point — we'd rather have the conversation in person.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+    <p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.</p>
     <div class="about-badges">
       <span class="badge">Non-Viral Delivery</span>
       <span class="badge">Cell &amp; Gene Therapy</span>
       <span class="badge">Modular Platform</span>
-      <span class="badge">[City, State]</span>
+      <span class="badge">City, State</span>
     </div>
   </div>
 </section>
 
-<!-- ── SCIENCE ── -->
 <section id="science">
   <p class="section-label">The Platform</p>
   <h2>How our platform works.</h2>
   <div class="science-grid">
     <div class="science-card">
       <p class="science-card-num">01 — The Problem</p>
-      <h3>Viral vectors are not enough</h3>
-      <p>Viral delivery dominates the field — but it comes with manufacturing complexity, immunogenicity risk, and payload constraints that limit what's possible. Non-viral alternatives exist, but most require deep expertise to use reliably.</p>
+      <h3>Lorem Ipsum Dolor</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud.</p>
     </div>
     <div class="science-card">
       <p class="science-card-num">02 — Our Approach</p>
-      <h3>Modular, non-viral delivery</h3>
-      <p>Our platform provides configurable, non-viral delivery components that can be adapted to a range of cargo types — nucleic acids, proteins, and beyond — without requiring custom engineering for each application.</p>
+      <h3>Consectetur Adipiscing</h3>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident deserunt.</p>
     </div>
     <div class="science-card">
       <p class="science-card-num">03 — Who It's For</p>
-      <h3>Built for developers, not just experts</h3>
-      <p>Designed for research labs, biotech developers, and CDMO process teams. Clear protocols, predictable performance, and modular components that fit into existing workflows without a steep learning curve.</p>
+      <h3>Sed Do Eiusmod</h3>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
     </div>
   </div>
-
   <div class="publications">
     <p class="pub-label">Selected Publications &amp; Presentations</p>
     <div class="pub-item">
       <div class="pub-year">2024</div>
       <div>
-        <div class="pub-title">[Title of foundational non-viral delivery study]</div>
-        <div class="pub-journal">[Journal Name] · [Lead Author] et al.</div>
+        <div class="pub-title">Title of landmark publication demonstrating core mechanism</div>
+        <div class="pub-journal">Journal Name &middot; Lead Author et al.</div>
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-year">2023</div>
       <div>
-        <div class="pub-title">[Title of platform characterization or benchmarking study]</div>
-        <div class="pub-journal">[Journal Name] · [Lead Author] et al.</div>
+        <div class="pub-title">Title of platform characterization or benchmarking study</div>
+        <div class="pub-journal">Journal Name &middot; Lead Author et al.</div>
       </div>
     </div>
     <div class="pub-item">
       <div class="pub-year">2022</div>
       <div>
-        <div class="pub-title">[Conference presentation or poster at ASGCT / ISCT / TERMIS]</div>
-        <div class="pub-journal">[Conference Name] · [Lead Author] et al.</div>
+        <div class="pub-title">Conference presentation or poster — ASGCT / ISCT</div>
+        <div class="pub-journal">Conference Name &middot; Year</div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── TEAM ── -->
 <section id="team">
   <p class="section-label">Leadership</p>
   <h2>The people behind the platform.</h2>
@@ -773,31 +563,30 @@
     <div class="team-card">
       <div class="team-photo"></div>
       <div class="team-title">Chief Executive Officer</div>
-      <div class="team-name">[Founder Name], PhD</div>
-      <p class="team-bio">Former [Role] at [Institution]. [X] years in drug development. Trained at [University]. Led [notable achievement] prior to founding BioPharma.</p>
+      <div class="team-name">Founder Name, PhD</div>
+      <p class="team-bio">Former Role at Institution. X years in drug development. Trained at University. Led notable achievement prior to founding BioPharma.</p>
     </div>
     <div class="team-card">
       <div class="team-photo"></div>
       <div class="team-title">Chief Scientific Officer</div>
-      <div class="team-name">[Founder Name], PhD</div>
-      <p class="team-bio">Principal investigator at [University] for [X] years. [Field] expert with [Y] publications and [Z] patents. Originator of the core platform technology.</p>
+      <div class="team-name">Founder Name, PhD</div>
+      <p class="team-bio">Principal investigator at University for X years. Field expert with Y publications and Z patents. Originator of the core platform technology.</p>
     </div>
     <div class="team-card">
       <div class="team-photo"></div>
       <div class="team-title">Chief Medical Officer</div>
-      <div class="team-name">[Name], MD</div>
-      <p class="team-bio">Board-certified [specialty]. Prior clinical development roles at [Big Pharma / CRO]. Oversaw [X] INDs and [Y] Phase 2/3 trials across [disease areas].</p>
+      <div class="team-name">Name, MD</div>
+      <p class="team-bio">Board-certified specialty. Prior clinical development roles at Big Pharma / CRO. Oversaw X INDs and Y Phase 2/3 trials across disease areas.</p>
     </div>
     <div class="team-card">
       <div class="team-photo"></div>
       <div class="team-title">Head of Operations</div>
-      <div class="team-name">[Name], MBA</div>
-      <p class="team-bio">Background in biotech operations and finance. Previously at [Company]. Manages partnerships, regulatory strategy coordination, and investor relations.</p>
+      <div class="team-name">Name, MBA</div>
+      <p class="team-bio">Background in biotech operations and finance. Previously at Company. Manages partnerships, regulatory strategy coordination, and investor relations.</p>
     </div>
   </div>
 </section>
 
-<!-- ── PARTNERSHIPS ── -->
 <section id="partnerships">
   <p class="section-label">Who We Work With</p>
   <h2>We collaborate across the ecosystem.</h2>
@@ -806,74 +595,88 @@
       <div class="partner-type">
         <p class="partner-type-label">Academic Institutions</p>
         <h3>For researchers &amp; labs</h3>
-        <p>We actively collaborate with academic labs working on non-viral delivery, cell engineering, and gene therapy. If you're running into delivery bottlenecks in your research, we want to hear about it — and we may be able to help.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation.</p>
       </div>
       <div class="partner-type">
         <p class="partner-type-label">CDMOs &amp; CROs</p>
         <h3>For manufacturing &amp; development partners</h3>
-        <p>Our tools are designed to translate from discovery to GMP-compatible workflows. We work with CDMOs to integrate our platform into existing process development pipelines — reducing time from concept to clinically relevant material.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur sint occaecat cupidatat non proident.</p>
       </div>
     </div>
     <div>
       <div class="partner-type">
         <p class="partner-type-label">Pharma &amp; Investors</p>
         <h3>For licensing &amp; strategic investment</h3>
-        <p>We are open to discussions around licensing, co-development, and strategic investment. Non-viral delivery is an unmet need across the cell and gene therapy landscape — our platform is designed to be broadly applicable. Data packages available under NDA.</p>
+        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni dolores eos qui ratione voluptatem.</p>
       </div>
       <div class="partner-type">
         <p class="partner-type-label">Clinical Community</p>
         <h3>For KOLs &amp; advisors</h3>
-        <p>We welcome conversations with KOLs and scientific advisors who understand where delivery is the limiting factor in advancing new therapies. Your perspective on unmet need directly shapes our roadmap.</p>
+        <p>Temporibus autem quibusdam et aut officiis debitis rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ── NEWS ── -->
 <section id="news">
   <p class="section-label">News &amp; Press</p>
   <h2>What we've been up to.</h2>
   <div class="news-grid">
     <div class="news-card">
       <p class="news-date">March 2025</p>
-      <h3>[Announcement: Company Launch / Seed Funding]</h3>
-      <p>BioPharma announces [X] in seed financing to advance its modular non-viral delivery platform. Funds will support platform development, partnerships, and early access programs for research labs and CDMOs.</p>
+      <h3>Announcement: Company Launch / Seed Funding</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua quis nostrud exercitation.</p>
     </div>
     <div class="news-card">
       <p class="news-date">January 2025</p>
-      <h3>[Publication or Conference Presentation]</h3>
-      <p>Platform data presented at [ASGCT / ISCT / Conference Name]. Results demonstrated [key finding] across multiple cargo types, supporting the platform's broad applicability in cell and gene therapy workflows.</p>
+      <h3>Publication or Conference Presentation</h3>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur occaecat cupidatat non proident deserunt.</p>
     </div>
     <div class="news-card">
       <p class="news-date">October 2024</p>
-      <h3>[Award, Grant, or Partnership]</h3>
-      <p>BioPharma awarded [Grant Name / NIH SBIR / BARDA] to advance non-viral delivery tooling for [specific application]. Work conducted in collaboration with [University / Research Institution].</p>
+      <h3>Award, Grant, or Partnership</h3>
+      <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione sequi nesciunt.</p>
     </div>
   </div>
 </section>
 
-<!-- ── CONTACT ── -->
 <section id="contact">
   <p class="section-label">Reach Out</p>
   <h2>Let's talk delivery.</h2>
   <p class="contact-sub">Whether you're a researcher hitting a delivery wall, a CDMO evaluating new tools, or an investor who sees the gap — the best next step is a conversation.</p>
   <div class="contact-options">
-    <a href="#" class="contact-btn primary">Send an Email</a>
-    <a href="#" class="contact-btn secondary" target="_blank">Schedule a Call</a>
-    <a href="#" class="contact-btn secondary" target="_blank">Connect on LinkedIn</a>
+    <a href="mailto:info@biopharma.com" class="contact-btn primary">Send an Email</a>
+    <a href="#" class="contact-btn secondary">Schedule a Call</a>
+    <a href="#" class="contact-btn secondary">Connect on LinkedIn</a>
   </div>
   <div class="contact-direct">
     <div>
       <p class="contact-item-label">General Inquiries</p>
-      <a href="/cdn-cgi/l/email-protection#2e474048416e4041584f4c4741004d4143" class="contact-item-value"><span class="__cf_email__" data-cfemail="573e3931381739382136353e387934383a">[email&#160;protected]</span></a>
+      <a href="mailto:info@biopharma.com" class="contact-item-value">info@biopharma.com</a>
     </div>
     <div>
       <p class="contact-item-label">Partnerships</p>
-      <a href="/cdn-cgi/l/email-protection#83f3e2f1f7ede6f1f0c3edecf5e2e1eaecade0ecee" class="contact-item-value"><span class="__cf_email__" data-cfemail="95e5f4e7e1fbf0e7e6d5fbfae3f4f7fcfabbf6faf8">[email&#160;protected]</span></a>
+      <a href="mailto:partners@biopharma.com" class="contact-item-value">partners@biopharma.com</a>
     </div>
     <div>
       <p class="contact-item-label">Investors</p>
-      <a href="/cdn-cgi/l/email-protection#80e9f2c0eeeff6e1e2e9efaee3efed" class="contact-item-value"><span class="__cf_email__" data-cfemail="afc6ddefc1c0d9cecdc6c081ccc0c2">[email&#160;protected]</span></a>
+      <a href="mailto:ir@biopharma.com" class="contact-item-value">ir@biopharma.com</a>
     </div>
     <div>
-      <p class="con
+      <p class="contact-item-label">Location</p>
+      <span class="contact-item-value">City, State</span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>&copy; 2025 BioPharma Therapeutics, Inc. All rights reserved.</span>
+  <span>
+    <a href="#">Privacy Policy</a> &nbsp;&middot;&nbsp;
+    <a href="#">Terms</a> &nbsp;&middot;&nbsp;
+    <a href="#">info@biopharma.com</a>
+  </span>
+</footer>
+
+</body>
+</html>
